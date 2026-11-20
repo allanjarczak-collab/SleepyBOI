@@ -1,0 +1,27 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+<LinearLayout android:orientation="vertical" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <Button android:id="@+id/pick" android:text="📂 Open .txt file" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/fileName" android:text="No file selected" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:text="Voice" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <Spinner android:id="@+id/voices" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/speedLabel" android:text="Speed 1.0x" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <SeekBar android:id="@+id/speed" android:max="150" android:progress="45" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/pitchLabel" android:text="Pitch 0.95 (lower = softer)" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <SeekBar android:id="@+id/pitch" android:max="150" android:progress="45" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <CheckBox android:id="@+id/repeat" android:text="🔁 Repeat" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/prev" android:text="⏮" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"/>
+        <Button android:id="@+id/play" android:text="▶ Play" android:layout_width="0dp" android:layout_weight="2" android:layout_height="wrap_content"/>
+        <Button android:id="@+id/next" android:text="⏭" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <SeekBar android:id="@+id/position" android:max="1000" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/time" android:text="0:00:00 / 0:00:00" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/back10" android:text="⏪ -10 min" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"/>
+        <Button android:id="@+id/fwd10" android:text="+10 min ⏩" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <Button android:id="@+id/stop" android:text="⏹ Stop" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/progress" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:text="Tip: for the most natural voices install 'Speech Services by Google', then in Android Settings → Text-to-speech download the high-quality voice for your language." android:textSize="12sp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>
+</ScrollView>
